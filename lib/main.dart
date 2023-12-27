@@ -6,6 +6,7 @@ import 'package:pinball/bootstrap.dart';
 import 'package:pinball_audio/pinball_audio.dart';
 import 'package:platform_helper/platform_helper.dart';
 import 'package:share_repository/share_repository.dart';
+import 'firebase_options.dart';
 
 void main() {
   bootstrap((firestore, firebaseAuth) async {
@@ -15,7 +16,9 @@ void main() {
     final authenticationRepository = AuthenticationRepository(firebaseAuth);
     final pinballAudioPlayer = PinballAudioPlayer();
     final platformHelper = PlatformHelper();
-    await Firebase.initializeApp();
+    await Firebase.initializeApp(
+      name: 'dev-pinball',
+      options: DefaultFirebaseOptions.web,);
     await authenticationRepository.authenticateAnonymously();
     return App(
       authenticationRepository: authenticationRepository,

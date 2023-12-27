@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "442397039597",
+    "firebase_url": "https://pinball-36d1a-default-rtdb.firebaseio.com",
+    "project_id": "pinball-36d1a",
+    "storage_bucket": "pinball-36d1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442397039597:android:1a532a44110d4c2152e5e4",
+        "android_client_info": {
+          "package_name": "com.example.pinball"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_KXU9w9h_FggkoRZfxRpGLzLKm3_onss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
